@@ -59,16 +59,17 @@ If necessary, you can re-commit & re-push. New commits will be added to latest '
 ### 9) Merge
 Owner of upstream repository will click 'merge pull request' button, if s/he satisfied with your commits.
 
-### 10) 
-
-
-Get latest changes from base repository
-=====
+### 10) Get latest changes from base repo to your master branch.
 ```
 git checkout master
 git fetch upstream
-git merge 
-git checkout -b x_feature
+git merge upsteam/master
 ```
-After these commands start from step 5
+### 11) Clean unnecessary branches
+```
+#delete local branch
+git branch -d a_new_feature_name
+#delete remote branch
+git push origin --delete a_new_feature_name
+```
 

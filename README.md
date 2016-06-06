@@ -33,5 +33,42 @@ Add your name in [WhoWasHere.md](WhoWasHere.md) file.
 ### 6) Add, Commit & Push your changes to your fork.
 ```
 git commit -m "a message for your commit"
-git push origin tutorial
+git push origin a_new_feature_name
 ```
+
+### 7) Create a Pull request for your changes in specified branch
+```
+go to your fork in github
+https://github.com/<your-username>/github-flow-pull-request-tutorial
+Click New pull request
+Then select your a_new_feature_name branch
+
+Compare options should be like this:
+	Left side:
+		base fork: trototype/github-flow-pull-re.. / base: master
+	Right side:
+		head fork: <your-username>/github-flow-pull-re.. / compare: a_new_feature_name
+
+Then click 'Create pull request' button. Give a proper title for your feature. Then click the new 'Create pull request' button.
+```
+
+### 8) Discuss your pull request if necessary.
+After all of these steps, base repo owners and you can comment and discuss your commits.
+If necessary, you can re-commit & re-push. New commits will be added to latest 'pull request' automatically.
+
+### 9) Merge
+Owner of upstream repository will click 'merge pull request' button, if s/he satisfied with your commits.
+
+### 10) 
+
+
+Get latest changes from base repository
+=====
+```
+git checkout master
+git fetch upstream
+git merge 
+git checkout -b x_feature
+```
+After these commands start from step 5
+
